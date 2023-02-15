@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00ecb1;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-highlight: #00ffff;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --transition: all 400ms ease;
+}
+
+/* customizing scrollbar  */
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-light);
+}
+
+/* customizing scrollbar ends here */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ================== utility classes ======================= */
+.mybtn {
+    background-color: var(--color-warning);
+    color: var(--color-bg);
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    padding: 0 1rem;
+    transition: var(--transition);
+}
+.mybtn:hover {
+    transform: scale(1.1);
+}
+.section_heading {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+}
+
+.text_highlight {
+    color: yellow;
+}
+
+.text_white {
+    color: white;
+}
+
+/* ================== utility classes ends ======================= */
+/* ================== feature section ======================= */
+#feature {
+    padding: 3.5rem 5rem;
+    background-color: var(--color-bg2);
+}
+
+.feature_box {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-bg2));
+}
+
+.feature_box_left {
+    padding: 0.5rem;
+}
+
+.feature_box_left img {
+    border-radius: 10px;
+    width: 500px;
+    max-height: 400px;
+}
+
+.img_tag ul {
+    display: flex;
+}
+
+.img_tag ul li {
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--color-warning);
+    color: var(--color-bg);
+    margin: 0.5rem 0.2rem;
+    padding: 0 0.2rem;
+    font-weight: bold;
+}
+
+.feature_box_right {
+    padding: 0 0.5rem;
+}
+
+.img_title {
+    font-size: 2rem;
+}
+
+.img_details {
+    display: flex;
+    margin: 1rem;
+}
+
+.img_details_left {
+    margin-right: 1rem;
+}
+
+.img_details_right {
+    margin-left: 1rem;
+}
+
+.img_details i {
+    color: var(--color-warning);
+}
+
+.img_details .value {
+    color: rgb(255, 255, 120);
+    font-weight: 500;
+}
+
+/* ================== feature section ends ======================= */
+/* ================== feed section ======================= */
+#feeds {
+    padding: 3.5rem 5rem;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feed_img_container, .filter_img_container {
+    background: linear-gradient(180deg, var(--color-primary), var(--color-bg));
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.feed_img {
+    background: linear-gradient(180deg, var(--color-warning), var(--color-primary));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.display_img {
+    width: 100%;
+}
+.display_img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.display_img_tag ul {
+    display: flex;
+}
+.display_img_tag ul li {
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--color-warning);
+    color: var(--color-bg);
+    margin: 0 0.3rem;
+    padding: 0 0.2rem;
+    font-size: 0.8rem;
+}
+.date_posted {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.feed_img .img_title {
+    text-align: center;
+    color: var(--color-bg);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.display_img_caption {
+    padding: 0 1rem;
+    text-align: center;
+}
+.display_img_caption a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+.display_img_caption a i {
+    background-color: rgba(16, 36, 148, 0.856);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+.display_img_caption a:hover {
+    color: var(--color-highlight);
+}
+
+/* ================== feed section ends ======================= */
+
+/* ================================= catagories section ===============================  */
+
+#catagories {
+    padding: 3.5rem 5rem;
+    background-color: var(--color-bg1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catagories_links_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    background: linear-gradient(180deg, var(--color-primary), var(--color-bg));
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.catagories_links {
+    background: linear-gradient(180deg, var(--color-warning), var(--color-bg2));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catagories_links_container a {
+    color: var(--color-white);
+    text-align: center;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+    text-shadow: 2px -3px 8px var(--color-bg);
+}
+
+.catagories_links_container a:hover {
+    color: var(--color-white);
+    transform: scale(1.1);
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+/* ================================= catagories section ends here ========================  */
+/* ================================= filter section ends here ========================  */
+#filter {
+    padding: 3.5rem 5rem;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter_links_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    background: linear-gradient(180deg, var(--color-primary), var(--color-bg));
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+/* ================================= filter section ends here ========================  */
+
+/* ================================= contact section ========================================  */
+#contact {
+    display: flex;
+    padding: 3.5rem 5rem;
+    padding-top: 6rem;
+    background-color: var(--color-bg2);
+}
+
+.contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.contact-right {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-left .contact-details {
+    font-size: 0.8rem;
+    color: var(--color-white);
+    margin: 0.3rem 0;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+}
+
+.contact-details a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+.contact-details a:hover {
+    color: var(--color-white);
+}
+
+.contact-details i {
+    font-size: 1.2rem;
+    color: var(--color-warning);
+    margin-right: 0.5rem;
+}
+
+.contact-media ul {
+    display: flex;
+}
+
+.contact-media ul a {
+    color: var(--color-light);
+    margin-right: 1rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.contact-media ul a:hover {
+    color: var(--color-white);
+    transform: scale(1.05);
+}
+
+.contact-cv-btn {
+    width: fit-content;
+}
+
+.contact-media {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.contact-media::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: var(--color-white);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 0.2rem 0;
+    background: var(--color-bg);
+    padding: 0.3rem;
+    color: var(--color-white);
+    border: 1px solid var(--color-bg2);
+    border-radius: 6px;
+    width: 100%;
+}
+
+.contact-form-btn {
+    width: fit-content;
+}
+
+.contact-right span {
+    display: none;
+    color: var(--color-success);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.thankyou-btn:hover {
+    transform: scale(1);
+}
+
+/* ================================= contact section ends here ===============================  */
+
+
+/* ================================= footer ==================================================  */
+.myfooter{
+    background: var(--color-bg);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+}
+
+.myfooter p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.myfooter p a, .myfooter p a:hover {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+/* ================================= footer ends here =======================================  */
+
+
+
+
+
+
+
+/* ==================== media queries ===================== */
+@media only screen and (max-width: 425px) {
+    /* ====== feature ======= */
+    #feature, #feeds, #catagories, #filter {
+        padding: 3.5rem 1rem;
+    }
+    .feature_box {
+        flex-direction: column;
+    }
+    .feature_box_left img {
+        width: 100%;
+    }
+    .img_tag ul li {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    .img_title {
+        font-size: 1.5rem;
+    }
+    .img_details {
+        flex-direction: column;
+    }
+    .img_details_right {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    /* ========== feeds ========= */
+    .feed_img_container, .filter_img_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .display_img_tag ul li {
+        font-size: 0.6rem;
+    }
+    
+    /* ============ catagories =========== */
+    .section_heading {
+        font-size: 1.5rem;
+    }
+    .catagories_links_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ============== filter ============= */
+
+    /* =============== contact ============= */
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 3.5rem 1rem;
+    }
+    .contact-left {
+        padding-right: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .contact-right {
+        padding-left: 0;
+        width: 100%;
+    }
+
+}

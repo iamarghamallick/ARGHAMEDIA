@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGHAMEDIA | Argha Mallick Photography</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ====================== navbar ============================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand mb-0 h1" href="#">
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            ARGHAMEDIA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#feature">Features</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#feeds">Media Feeds</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="nature">Nature</a>
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="flower">Flower</a>
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="riverside">Riverside</a>
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="festivals">Festivals</a>
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="sunset">Sunset</a>
+                        <a class="dropdown-item" href="#filter" onclick="handleFilter(this)" name="street">Street</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search with #keywords"
+                    aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- ====================== navbar ends ============================ -->
+
+
+    <!-- ====================== feature ============================ -->
+    <section id="feature">
+        <h1 class="section_heading">Today's <span class="text_highlight">feature</span></h1>
+        <div class="feature_box">
+            <div class="feature_box_left">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDraqhAnOPZuhNOQkdikMhWgRhhE6HDya3KI2RUAXKboPLBoX7rxAIjPgu_qY0kFKzi8cwTTOn_J3HJE3vVKxvvHRZe9_kehK7733j4G5KrdkF8wgWgq6XNUrl-2lCWcAXdflHm3wmSfJyYsOjqH8crabi-S-aIULyucqAEKE292pANYntm8751qZf/s16000/PSX_20221119_220137.jpg"
+                    alt="image" srcset="">
+                <div class="img_tag text_white">
+                    <ul>
+                        <li>#FLOWER</li>
+                        <li>#Chinese ixora</li>
+                        <li>#NATURE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature_box_right">
+                <div class="img_title text_highlight">Chinese Ixora Flower</div>
+                <div class="img_cap text_white">Ixora is a genus of flowering plants in the family Rubiaceae. It is the only genus in the tribe Ixoreae. It consists of tropical evergreen trees and shrubs and holds around 544 species.
+                    <br>
+                    <br>
+                    Though native to the tropical and subtropical areas throughout the world, its centre of diversity is in Tropical Asia. Ixora also grows commonly in subtropical climates in the United States, such as Florida where it is commonly known as <span class="text_highlight">West Indian jasmine</span>.
+                </div>
+                <div class="img_details text_white">
+                    <div class="img_details_left">
+                        <div class="img_location"><i class="fa-solid fa-location-dot"></i> <span
+                                class="location value">Kolkata</span></div>
+                        <div class="img_date"><i class="fa-solid fa-calendar-week"></i> Captured on <span
+                                class="date value">19 Nov, 2022</span></div>
+                        <div class="img_resolution"><i class="fa-solid fa-dna"></i> Resoluion <span
+                                class="resolution value">1296 X 1296</span></div>
+                        <div class="img_camera"><i class="fa-solid fa-camera"></i> Camera <span
+                                class="camera value">SM-A260G</span></div>
+                    </div>
+                    <div class="img_details_right">
+                        <div class="img_camera_apeture"><i class="fa-solid fa-camera-retro"></i> Apeture <span
+                                class="apeture value">F1.9</span></div>
+                        <div class="img_camera_flength"><i class="fa-solid fa-arrows-to-circle"></i> Focal length <span
+                                class="flength value">2.20 mm</span></div>
+                        <div class="img_camera_flash"><i class="fa-solid fa-bolt"></i> Flash <span
+                                class="flash value">Flash used</span></div>
+                        <div class="img_camera_iso"><i class="fa-solid fa-atom"></i> ISO <span
+                                class="iso value">40</span></div>
+                        <div class="img_camera_exposuretime"><i class="fa-regular fa-clock"></i> Exposure Time <span
+                                class="exposuretime value">1/900
+                                s</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== feature ends ============================ -->
+
+
+    <!-- ========================== feeds section ============================= -->
+    <section id="feeds">
+        <h1 class="section_heading"><span class="text_highlight">Latest</span> feed</h1>
+        <div class="feed_img_container" id="feed_image_container">
+            <!-- <div class="feed_img">
+                <div class="display_img">
+                    <img src="https://www.fnordware.com/superpng/pnggrad8rgb.png"
+                        alt="">
+                </div>
+                <p class="date_posted">13.02.23</p>
+                <p class="img_title">Green forest</p>
+                <div class="display_img_caption text_white">
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="display_img_tag text_white">
+                    <ul>
+                        <li>#HASTAG1</li>
+                        <li>#HASTAG2</li>
+                        <li>#HASTAG3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feed_img"></div> -->
+        </div>
+        <button class="mybtn load_more">Load More</button>
+    </section>
+    <!-- ========================== feeds section ends ============================= -->
+
+    <!-- =============================== catagories ===================================== -->
+    <section id="catagories">
+        <h1 class="section_heading">Filter with<span class="text_highlight"> Catagories</span></h1>
+        <div class="catagories_links_container">
+            <a onclick="handleFilter(this)" class="catagories_links" id="0" name="nature">Nature</a>
+            <a onclick="handleFilter(this)" class="catagories_links" id="1" name="flower">Flower</a>
+            <a onclick="handleFilter(this)" class="catagories_links" id="2" name="riverside">Riverside</a>
+            <a onclick="handleFilter(this)" class="catagories_links" id="3" name="festivals">Festivals</a>
+            <a onclick="handleFilter(this)" class="catagories_links" id="4" name="sunset">Sunset</a>
+            <a onclick="handleFilter(this)" class="catagories_links" id="5" name="street">Street</a>
+        </div>
+    </section>
+
+    <!-- =============================== catagories ends ===================================== -->
+
+    <!-- ========================== filter section ============================= -->
+    <section id="filter">
+        <h1 class="section_heading"><span class="text_highlight" id="catagory_heading">Nature</span></h1>
+        <div class="filter_img_container" id="filter_img_container">
+            <!-- <div class="feed_img">
+                <div class="display_img">
+                    <img src="https://www.fnordware.com/superpng/pnggrad8rgb.png"
+                        alt="">
+                </div>
+                <p class="date_posted">13.02.23</p>
+                <p class="img_title">Image Title</p>
+                <div class="display_img_caption text_white">
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="display_img_tag text_white">
+                    <ul>
+                        <li>#HASTAG1</li>
+                        <li>#HASTAG2</li>
+                        <li>#HASTAG3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feed_img"></div> -->
+        </div>
+        <button class="mybtn load_more">See More</button>
+    </section>
+    <!-- ========================== filter section ends ============================= -->
+
+    <!-- =================================== contact section ============================================ -->
+    <div id="contact">
+        <div class="contact-left">
+            <h1 class="section_heading">Contact <span class="text_highlight">Me</span></h1>
+            <span class="contact-details"><i class="fa-solid fa-paper-plane"></i> <a
+                    href="mailto:contact.arghamallick@gmail.com">contact.arghamallick@gmail.com</a></span>
+            <span class="contact-details"><i class="fa-solid fa-phone"></i><a href="tel:+919330927535">+91
+                    9330927535</a></span>
+            <div class="contact-media">
+                <ul>
+                    <a href="https://in.linkedin.com/in/argha-mallick-8b81251a3" target="_blank">
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </a>
+                    <a href="https://www.facebook.com/iam_arghamallick" target="_blank">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                    </a>
+                    <a href="https://twitter.com/iamarghamallick" target="_blank">
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/iamarghamallick/" target="_blank">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a>
+                    <a href="https://github.com/iamarghamallick" target="_blank">
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <span class="mybtn thankyou-btn">Glad to see you here... Thank You!</span>
+        </div>
+        <div class="contact-right">
+            <form action="submit" class="contact-form" name="submit-to-google-sheet">
+                <input type="text" name="Name" id="name" placeholder="Your Name" id="name" required>
+                <input type="email" name="Email" id="email" placeholder="Your Email" id="email" required>
+                <textarea name="Message" id="message" rows="6" placeholder="Your Message" id="message"
+                    required></textarea>
+                <button type="submit" class="mybtn contact-form-btn" id="submit-form">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <!-- =================================== contact section ends here ================================= -->
+
+    <!-- =================================== footer ==================================================== -->
+    <footer class="myfooter">
+        <p>2023 &copy <a href="#">Argha Mallick Photography</a></p>
+    </footer>
+    <!-- =================================== footer ends here ========================================= -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
