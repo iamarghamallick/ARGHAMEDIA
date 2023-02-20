@@ -22,7 +22,7 @@ response.then((value) => {
                 <p class="date_posted">${picture[item].imgPostedOn}</p>
                 <p class="img_title">${picture[item].imgTitle}</p>
                 <div class="display_img_caption text_white">
-                    <a href="${picture[item].imgUrl}"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="${picture[item].imgUrl}" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
                 <div class="display_img_tag text_white">
                     <ul>
@@ -50,7 +50,7 @@ response.then((value) => {
                 <p class="date_posted">${picture[item].imgPostedOn}</p>
                 <p class="img_title">${picture[item].imgTitle}</p>
                 <div class="display_img_caption text_white">
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="${picture[item].imgUrl}" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
                 <div class="display_img_tag text_white">
                     <ul>
@@ -88,7 +88,7 @@ function handleFilter(e) {
                 <p class="date_posted">${picture[item].imgPostedOn}</p>
                 <p class="img_title">${picture[item].imgTitle}</p>
                 <div class="display_img_caption text_white">
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="${picture[item].imgUrl}" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
                 <div class="display_img_tag text_white">
                     <ul>
@@ -106,3 +106,42 @@ function handleFilter(e) {
     
     })
 }
+
+
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzPKbpRNBiDQ46XgWbXxZiJ1GvXyqwm4WCm46W_Rh1yJ4aqnaEzpetW17XoHJvqs5iz/exec'
+const form = document.forms['submit-to-google-sheet']
+
+let submit_form = document.getElementById("submit-form");
+let person_name = document.getElementById("name");
+let person_email = document.getElementById("email");
+let person_message = document.getElementById("message");
+let msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+    msg.style.display = "block";
+    msg.innerText = "Sending...";
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            console.log('Success!', response);
+            msg.style.display = "block";
+            msg.innerText = "Message sent sccessfully! Thank you.";
+            person_name.value = "";
+            person_email.value = "";
+            person_message.value = "";
+            setTimeout(() => {
+                msg.style.display = "none";
+            }, 10000)
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            msg.style.display = "block";
+            msg.innerText = "Couldn't send the message!";
+            setTimeout(() => {
+                msg.style.display = "none";
+            }, 10000)
+        })
+})
