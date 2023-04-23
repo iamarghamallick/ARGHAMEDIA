@@ -83,6 +83,10 @@ body {
     color: white;
 }
 
+.open-modal-btn {
+    cursor: pointer;
+}
+
 /* ================== utility classes ends ======================= */
 /* ================== feature section ======================= */
 #feature {

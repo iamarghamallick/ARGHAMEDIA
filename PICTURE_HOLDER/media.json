@@ -5,7 +5,7 @@
         "redirectUrl": "",
         "imgCategory": "flower",
         "imgTitle": "Chinese Ixora Flower",
-        "imgCaption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sapiente alias molestiae quia voluptates tenetur blanditiis veritatis autem voluptatum veniam ad, explicabo quis magni eligendi maiores suscipit error illo laudantium vel. Libero pariatur culpa distinctio architecto! Cupiditate ipsum porro suscipit itaque incidunt veritatis neque eos ut asperiores, quo, optio eligendi.",
+        "imgCaption": "Ixora is a genus of flowering plants in the family Rubiaceae. It is the only genus in the tribe Ixoreae. It consists of tropical evergreen trees and shrubs and holds around 544 species. Though native to the tropical and subtropical areas throughout the world, its centre of diversity is in Tropical Asia. Ixora also grows commonly in subtropical climates in the United States, such as Florida where it is commonly known as West Indian jasmine.",
         "imgLocation": "Kolkata",
         "imgCapturedOn": "19 Nov, 2022",
         "imgResolution": "1296 X 1296",
@@ -18,7 +18,8 @@
         "imgTag1": "#FLOWER",
         "imgTag2": "#Chinese ixora",
         "imgTag3": "#NATURE",
-        "imgPostedOn": "14.02.2023"
+        "imgPostedOn": "14.02.2023",
+        "featured": "true"
     },
     {
         "uniqueId": "2003",
@@ -39,7 +40,8 @@
         "imgTag1": "#SUNSET",
         "imgTag2": "#SPORT",
         "imgTag3": "#PLAYGROUND",
-        "imgPostedOn": "14.02.2023"
+        "imgPostedOn": "14.02.2023",
+        "featured": "false"
     },
     {
         "uniqueId": "2004",
@@ -60,7 +62,8 @@
         "imgTag1": "#BARRACKPORE",
         "imgTag2": "RIVERSIDE ROAD",
         "imgTag3": "ROADSIDE",
-        "imgPostedOn": "14.02.2023"
+        "imgPostedOn": "14.02.2023",
+        "featured": "false"
     },
     {
         "uniqueId": "2005",
@@ -81,7 +84,8 @@
         "imgTag1": "#STREET",
         "imgTag2": "#BIDHANNAGAR",
         "imgTag3": "#KOLKATA",
-        "imgPostedOn": "15.02.2023"
+        "imgPostedOn": "15.02.2023",
+        "featured": "false"
     },
     {
         "uniqueId": "2006",
@@ -102,7 +106,8 @@
         "imgTag1": "#Spiny Bitter",
         "imgTag2": "#FLOWER",
         "imgTag3": "#NATURE",
-        "imgPostedOn": "14.02.2023"
+        "imgPostedOn": "14.02.2023",
+        "featured": "false"
     },
     {
         "uniqueId": "2007",
@@ -123,7 +128,8 @@
         "imgTag1": "#SUNSET",
         "imgTag2": "#BUILDINGS",
         "imgTag3": "#NEW TOWN",
-        "imgPostedOn": "15.02.2023"
+        "imgPostedOn": "15.02.2023",
+        "featured": "false"
     },
     {
         "uniqueId": "2008",
@@ -144,10 +150,11 @@
         "imgTag1": "#BARRACKPORE",
         "imgTag2": "#NATURE",
         "imgTag3": "#STREETS",
-        "imgPostedOn": "14.02.2023"
+        "imgPostedOn": "14.02.2023",
+        "featured": "false"
     },
     {
-        "uniqueId": "2008",
+        "uniqueId": "2009",
         "imgUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7OgoDU4F9nd0QEL02pG0JnY_v6nNtwf7pEdde7_YiJw9TRr8gMOy_8trW53OGBkr7ZWTMUG4MIuGcApzx2R6lGUPV--BcR2D0fnyFqSYAJAUTlPb8F2rhM0XSUDTjt_gI5sMNE3dHpOE-0SYIEl1RwG6MVkIDtilxT_UkorlrElNtNsXZTEfhU_um/s16000/Festival%20photography%20by%20Argha%20Mallick.jpeg",
         "redirectUrl": "",
         "imgCategory": "festivals",
@@ -165,10 +172,11 @@
         "imgTag1": "#DURGA PUJA",
         "imgTag2": "#FESTIVALS",
         "imgTag3": "#BENGALI",
-        "imgPostedOn": "15.02.2023"
+        "imgPostedOn": "15.02.2023",
+        "featured": "false"
     },
     {
-        "uniqueId": "2008",
+        "uniqueId": "2010",
         "imgUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA4pe_aZKkOboCMizq1dBHg1FKc-FW1Mk3CL0rY1MiaQ5yIhNJNDeFkchCIsINyG-YOIgxoEUpQ-I0tORTPVljVjIZbMX7eHt7rX1RCHOnE9iXfdQZZe6MR1awsN1_zBC58IL1oWAQctFoeDO5-zSrKvGZTDBVmMlGLK6m_uE_VXboh39M3IKikAse/s16000/20201130_154810%20(1).jpg",
         "redirectUrl": "",
         "imgCategory": "riverside",
@@ -186,6 +194,7 @@
         "imgTag1": "#RIVERSIDE",
         "imgTag2": "#SUNSET",
         "imgTag3": "#NATURE",
-        "imgPostedOn": "15.02.2023"
+        "imgPostedOn": "15.02.2023",
+        "featured": "false"
     }
 ]
