@@ -1,3 +1,9 @@
+// pre-loader
+let loading = document.getElementById("preloader");
+window.addEventListener("load", ()=>{
+	loading.style.display = "none";
+})
+
 let featureBox = document.getElementById("feature_box");
 let feedImageContainer = document.getElementById("feed_image_container");
 let filterImageContainer = document.getElementById("filter_img_container");
